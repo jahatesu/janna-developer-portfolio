@@ -1,23 +1,74 @@
-# Janna Portfolio — Organized Version
+# 🚀 Janna Portfolio — Modern Web Developer Portfolio
 
-This package preserves the original single-page portfolio design and behavior while separating structure, presentation, configuration, interactions, animation, and terminal logic.
+A sleek, responsive, and feature-packed developer portfolio built with modular **HTML5**, **CSS3**, and modern **vanilla JavaScript**. Designed with a polished dark-mode aesthetic, micro-interactions, custom animations, and an interactive CLI terminal experience.
 
-## Run locally
+---
 
-Because the JavaScript uses ES modules, open the project through a local development server instead of double-clicking `index.html`.
+## 🌟 Key Features
 
-- VS Code: use the Live Server extension.
-- Python: run `python -m http.server 8000` inside this folder.
+- 🖥️ **Interactive Web CLI / Terminal**: Includes a fully interactive terminal interface supporting custom commands, history navigation, auto-suggestions, and quick portfolio navigation.
+- 🎨 **Modular Architecture**: Clean separation of styles and scripts using CSS variables, atomic CSS structures, and standalone JavaScript modules.
+- 📱 **Fully Responsive Layout**: Mobile-first design optimized for seamless viewing on desktops, tablets, and smartphones.
+- ✨ **Rich Animations & UI Effects**: Custom scroll-triggered animations, interactive particle effects, magnetic buttons, and glassmorphism styling.
+- 📁 **Organized Project Showcase**: Dedicated sections highlighting featured projects, skills, professional experience, and downloadable assets/documents.
+- ⚡ **Zero External Dependencies**: Built with raw web standards for lightning-fast loading speeds and optimal performance.
 
-Then open `http://localhost:8000`.
+---
 
-## Customize
+## 📁 Repository Structure
 
-- Edit profile details and links in `js/config.js`.
-- Replace `assets/images/portrait-placeholder.svg` with your portrait and update the image path in `index.html` if the filename changes.
-- Put your résumé in `assets/documents/`.
-- Add project images to `assets/images/projects/`.
+```text
+janna-portfolio-organized/
+├── index.html                    # Main HTML entry point
+├── README.md                     # Portfolio README
+│
+├── assets/                       # Static media and document assets
+│   ├── icons/                    # Web SVG icons & favicon
+│   │   └── favicon.svg
+│   ├── images/                   # Project preview images & placeholders[cite: 1]
+│   │   ├── portrait-placeholder.svg[cite: 1]
+│   │   └── projects/             # Media assets for project cards[cite: 1]
+│   └── documents/                # Resumes, CVs, or downloadable assets[cite: 1]
+│
+├── css/                          # Modular CSS stylesheet architecture[cite: 1]
+│   ├── base.css                  # CSS reset, variables, & fundamental styling[cite: 1]
+│   ├── style.css                 # Core global styles & layout imports[cite: 1]
+│   ├── layout.css                # Structure, grid system, flex containers[cite: 1]
+│   ├── sections.css              # Styles for Hero, About, Projects, Experience, Contact[cite: 1]
+│   ├── components.css            # Buttons, cards, terminal modal, navigation UI[cite: 1]
+│   ├── animations.css            # Keyframe animations, transitions, hover effects[cite: 1]
+│   └── responsive.css            # Breakpoint media queries for mobile & tablet[cite: 1]
+│
+└── js/                           # Modular JavaScript files[cite: 1]
+    ├── main.js                   # Application initialization & event orchestrator[cite: 1]
+    ├── config.js                 # Global project configurations & data sources[cite: 1]
+    ├── interactions.js           # UI listeners, smooth scrolling, mobile nav, theme toggles[cite: 1]
+    ├── terminal.js               # CLI terminal emulation logic & command execution[cite: 1]
+    └── animations.js             # Canvas background effects & scroll observers[cite: 1]
 
-## Structure
+# 🛠️ Tech Stack & Concepts
+Frontend Core: HTML5, Modern CSS3 (Grid, Flexbox, Custom Properties), Vanilla JavaScript (ES6+)[cite: 1].
 
-`index.html` contains the semantic page structure. The `css/` directory separates global styles, layout, components, sections, animation, and responsive rules. The `js/` directory separates data, initialization, interactions, animations, and terminal behavior.
+Architecture: Modular CSS (BEM-inspired), Event-Driven JS Modules[cite: 1].
+
+Interactive Components: Canvas API for dynamic background particles, Web Terminal CLI emulation[cite: 1].
+
+Tooling: Pure static hosting compatible (GitHub Pages, Vercel)[cite: 1].
+
+# 🚀 Quick Start & Local Setup
+
+**1. Clone the Repository**
+git clone [https://github.com/your-username/janna-portfolio.git](https://github.com/your-username/janna-portfolio.git)
+cd janna-portfolio-organized
+
+**2. Run Locally**
+Since this project uses vanilla web standards, no npm install or build step is strictly required[cite: 1].
+
+Option A: Direct Open
+Double-click index.html to open it in any modern web browser[cite: 1].
+
+Option B: Local Development Server (Recommended)
+Using VS Code Live Server extension or Python’s HTTP server:
+
+#📄 License
+This project is open-source and available under the MIT License. Feel free to customize it for your own developer portfolio!
