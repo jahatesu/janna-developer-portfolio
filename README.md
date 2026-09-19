@@ -45,6 +45,7 @@ janna-portfolio-organized/
     ├── interactions.js           # UI listeners, smooth scrolling, mobile nav, theme toggles[cite: 1]
     ├── terminal.js               # CLI terminal emulation logic & command execution[cite: 1]
     └── animations.js             # Canvas background effects & scroll observers[cite: 1]
+```
 
 # 🛠️ Tech Stack & Concepts
 Frontend Core: HTML5, Modern CSS3 (Grid, Flexbox, Custom Properties), Vanilla JavaScript (ES6+)[cite: 1].
@@ -58,14 +59,16 @@ Tooling: Pure static hosting compatible (GitHub Pages, Vercel)[cite: 1].
 # 🚀 Quick Start & Local Setup
 
 **1. Clone the Repository**
+```text
 git clone [https://github.com/your-username/janna-portfolio.git](https://github.com/your-username/janna-portfolio.git)
-cd janna-portfolio-organized
+cd janna-developer-portfolio
+```
 
 **2. Run Locally**
-Since this project uses vanilla web standards, no npm install or build step is strictly required[cite: 1].
+Since this project uses vanilla web standards, no npm install or build step is strictly required.
 
 Option A: Direct Open
-Double-click index.html to open it in any modern web browser[cite: 1].
+Double-click index.html to open it in any modern web browser.
 
 Option B: Local Development Server (Recommended)
 Using VS Code Live Server extension or Python’s HTTP server:
