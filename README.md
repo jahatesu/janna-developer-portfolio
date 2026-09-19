@@ -60,7 +60,7 @@ Tooling: Pure static hosting compatible (GitHub Pages, Vercel)[cite: 1].
 
 **1. Clone the Repository**
 ```text
-git clone [https://github.com/your-username/janna-portfolio.git](https://github.com/your-username/janna-portfolio.git)
+git clone https://github.com/jahatesu/janna-developer-portfolio.git
 cd janna-developer-portfolio
 ```
 
