@@ -1,0 +1,82 @@
+/* ============================================================
+   JANNA / DARK CYBER-ELEGANCE
+   01 Tokens & reset    02 Ambient canvas    03 Navigation
+   04 Hero             05 Editorial grid    06 Education
+   07 Skills           08 Project cards     09 Experience
+   10 Terminal         11 Contact / footer  12 Motion
+   13 Responsive       14 Accessibility
+   ============================================================ */
+
+/* 01 / TOKENS & RESET */
+:root {
+  color-scheme: dark;
+  --bg: #05050a;
+  --bg-2: #0a0a12;
+  --surface: #0f0f1b;
+  --text: #f2f0fb;
+  --muted: #a79cc4;
+  --cyan: #00f3ff;
+  --pink: #ff0055;
+  --pink-text: #ff4d94;
+  --violet: #b026ff;
+  --violet-soft: #d68bff;
+  --glass-bg: rgba(15, 15, 27, .6);
+  --glass-bg-strong: rgba(15, 15, 27, .78);
+  --glass-border: linear-gradient(135deg, rgba(0, 243, 255, .3), rgba(255, 0, 85, .1));
+  --glass-border-hover: linear-gradient(135deg, rgba(0, 243, 255, .65), rgba(255, 0, 85, .35));
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, .7);
+  --glow-purple: 0 0 8px rgba(176, 38, 255, .55);
+  --glow-cyan: 0 0 8px rgba(0, 243, 255, .6);
+  --glow-pink: 0 0 8px rgba(255, 0, 85, .55);
+  --glass: var(--glass-bg);
+  --line: rgba(0, 243, 255, .18);
+  --serif: 'Chakra Petch', 'Inter', sans-serif;
+  --display: 'Orbitron', 'Chakra Petch', Arial, sans-serif;
+  --sans: 'Inter', Arial, sans-serif;
+  --mono: 'Space Mono', 'DM Mono', monospace;
+  --page: 1320px;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --section-space: clamp(5rem, 8vw, 8rem);
+}
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
+body { background: radial-gradient(ellipse 140% 90% at 50% -10%, #14102a 0%, var(--bg-2) 42%, var(--bg) 100%); color: var(--text); font: 400 1rem/1.75 var(--sans); -webkit-font-smoothing: antialiased; overflow-wrap: break-word; }
+a { color: inherit; text-decoration: none; }
+button, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+img, svg { display: block; max-width: 100%; }
+ul { padding-left: 1.2rem; }
+::selection { background: var(--violet); color: #fff; }
+[hidden] { display: none !important; }
+.container { width: min(calc(100% - 5rem), var(--page)); margin-inline: auto; }
+.mono, .eyebrow, .section-index, .section-meta { font-family: var(--mono); font-size: .75rem; line-height: 1.7; letter-spacing: .08em; }
+.eyebrow, .section-index, .section-meta { text-transform: uppercase; }
+.muted { color: var(--muted); }
+.cyan { color: var(--cyan); }
+.pink { color: var(--pink-text); }
+.violet { color: var(--violet-soft); }
+.small { font-size: .8rem; }
+.glass {
+  position: relative;
+  background: var(--glass-bg);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-image: linear-gradient(var(--glass-bg), var(--glass-bg)), var(--glass-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--glass-shadow);
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease), background-image .35s var(--ease);
+}
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; top: .5rem; left: 1rem; z-index: 100; padding: .8rem 1rem; background: var(--cyan); color: var(--bg); transform: translateY(-160%); }
+.skip-link:focus { transform: none; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--cyan); outline-offset: 5px; }
+input:focus-visible, textarea:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+a[aria-disabled='true'] { cursor: default; }
+.section-title, .hero-title, .hero-display, .hero-serif, .degree-school, .thesis-wordmark, .footer-statement, .brand {
+  text-shadow: 0 0 8px rgba(0, 243, 255, .35), 0 0 26px rgba(176, 38, 255, .18);
+}

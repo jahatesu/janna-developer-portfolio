@@ -1,0 +1,19 @@
+/* 03 / NAVIGATION: mobile enhancement leaves links available without JS. */
+.site-header { position: sticky; top: 0; z-index: 80; display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 88px; padding: 1rem max(2.5rem, calc((100% - var(--page)) / 2)); border-bottom: 1px solid rgba(0,243,255,.14); background: rgba(5,5,10,.72); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transition: box-shadow .3s, border-color .3s; }
+.site-header.is-scrolled { box-shadow: 0 8px 40px rgba(0,0,0,.5), 0 1px 0 rgba(0,243,255,.25); border-color: rgba(0,243,255,.3); }
+.brand { display: inline-flex; align-items: center; gap: .8rem; font: 700 .95rem var(--display); letter-spacing: .08em; white-space: nowrap; }
+.brand-symbol { width: 34px; color: var(--cyan); font: 600 italic 2.7rem/.9 var(--serif); letter-spacing: -.12em; }
+.brand small { font-size: .7rem; color: var(--muted); }
+.brand-slash { color: var(--violet); }
+.site-nav { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2.5rem); }
+.site-nav a { position: relative; padding-block: .5rem; font-size: .8rem; letter-spacing: .04em; color: var(--muted); transition: color .25s, text-shadow .25s; }
+.site-nav a:hover, .site-nav a[aria-current] { color: var(--cyan); text-shadow: 0 0 10px rgba(0,243,255,.6); }
+.site-nav a:not(.nav-contact)::after { content: ''; position: absolute; left: 50%; bottom: .15rem; width: 100%; height: 1px; background: linear-gradient(90deg, var(--pink), var(--cyan)); box-shadow: 0 0 8px rgba(0,243,255,.6); transform: translateX(-50%) scaleX(0); transform-origin: center; transition: transform .35s var(--ease); }
+.site-nav a:hover::after, .site-nav a[aria-current]::after { transform: translateX(-50%) scaleX(1); }
+.site-nav .nav-contact { display: flex; align-items: center; gap: 1.5rem; padding: .55rem 1rem; border: 1px solid rgba(0,243,255,.5); border-radius: 6px; color: var(--text); transition: box-shadow .3s, border-color .3s; }
+.site-nav .nav-contact:hover { border-color: var(--cyan); box-shadow: 0 0 18px rgba(0,243,255,.35); }
+.nav-contact span { color: var(--cyan); }
+.menu-toggle { display: flex; align-items: center; gap: 1rem; padding: .6rem; background: none; border: 1px solid var(--line); border-radius: 4px; font: 400 .8rem var(--mono); }
+.menu-lines { position: relative; width: 20px; height: 12px; border-block: 1px solid var(--cyan); transition: transform .3s; }
+.menu-toggle[aria-expanded='true'] .menu-lines { transform: rotate(45deg); height: 1px; border-bottom: 0; }
+.menu-toggle[aria-expanded='true'] .menu-lines::after { content: ''; position: absolute; inset: -1px 0 0; border-top: 1px solid var(--cyan); transform: rotate(90deg); }

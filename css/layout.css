@@ -1,0 +1,26 @@
+/* 05 / EDITORIAL GRID & MARQUEE */
+.marquee { overflow: hidden; margin-top: 1rem; padding-block: 1.2rem; background: rgba(176,38,255,.04); border-block: 1px solid rgba(176,38,255,.18); }
+.marquee-track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
+.marquee-track > div { display: flex; align-items: center; flex-shrink: 0; gap: 2.6rem; padding-right: 2.6rem; }
+.marquee span { font: 700 clamp(1.4rem,2.6vw,2.4rem)/1.2 var(--display); color: #d68bff; letter-spacing: -.04em; }
+.marquee i { color: var(--cyan); font-size: 1.25rem; font-style: normal; text-shadow: 0 0 20px #00f3ff80; }
+.marquee span:nth-of-type(even) { color: transparent; -webkit-text-stroke: 1px #9b3fd6; }
+.section { padding-block: var(--section-space); }
+.section-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding-bottom: 1.2rem; margin-bottom: 3.7rem; border-bottom: 1px solid var(--line); }
+.section-index { color: var(--cyan); }
+.section-meta { color: var(--muted); }
+.section-title { font: 500 clamp(2.7rem,4.7vw,4.7rem)/1.02 var(--serif); letter-spacing: -.035em; }
+.section-title em { color: #d68bff; font-weight: 500; }
+.section-intro { display: grid; grid-template-columns: 1.45fr 1fr; align-items: end; gap: 4rem; margin-bottom: 3.5rem; }
+.intro-copy { max-width: 440px; color: var(--muted); font-size: .95rem; }
+.about-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 6rem; }
+.about-copy { color: var(--muted); }
+.about-copy > p + p { margin-top: 1.3rem; }
+.lead { font: 500 1.45rem/1.45 var(--serif); color: #e0d9e8; }
+.lead strong { color: var(--text); font-weight: 600; }
+blockquote { margin-top: 2rem; padding-left: 1.3rem; border-left: 1px solid var(--pink); color: #e0c9ff; font: 500 italic 1.45rem/1.4 var(--serif); }
+.principles-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.3rem; margin-top: 3.7rem; }
+.principle { padding: 1.8rem; }
+.principle:hover { transform: translateY(-5px); box-shadow: var(--glass-shadow), 0 0 30px rgba(176,38,255,.22); background-image: linear-gradient(var(--glass-bg-strong), var(--glass-bg-strong)), var(--glass-border-hover); }
+.principle h3 { margin: 2rem 0 .8rem; font: 500 2.1rem/1.1 var(--serif); }
+.principle p { color: var(--muted); font-size: .9rem; }

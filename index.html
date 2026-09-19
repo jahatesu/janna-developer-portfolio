@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janna Andrea Justiniano — FEU Institute of Technology Computer Science graduate, full-ride scholar, and aspiring software engineer. Explore full-stack projects, technical skills, and internship experience.">
+  <meta name="theme-color" content="#05050A">
+  <title>Janna — Full-Stack Developer / Software Engineering</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800;900&family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true"><canvas class="particle-canvas" id="particle-canvas"></canvas><div class="aura aura-cyan"></div><div class="aura aura-pink"></div><div class="cyber-grid"></div><div class="grid-scanner"></div></div>
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Janna, home"><span class="brand-symbol" aria-hidden="true">j.</span><span>JANNA<span class="brand-slash"> / </span><small>DEV</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden><span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Stack</a><a href="#projects">Work</a><a href="#experience">Journey</a><a href="#lab">Terminal</a><a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 00 / HERO. Replace placeholder.jpg with your own portrait, keeping its name. -->
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-topline mono"><p><span class="status-dot"></span>System Online • Ready for core engineering</p><span>TAGUIG CITY, PH <span class="muted">/ UTC+08</span></span></div>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-fade">ALWAYS LEARNING. ALWAYS BUILDING. ALWAYS IMPROVING.</p>
+          <h1 id="hero-title" class="hero-title reveal-slide"><span class="hero-greeting">Hi, I'm <em>Janna.</em></span><span class="hero-display">FULL-STACK</span><span class="hero-serif">developer<span class="title-star" aria-hidden="true">✳</span></span></h1>
+          <div class="hero-description reveal-fade"><span class="code-bracket" aria-hidden="true">&lt;/&gt;</span><p>Curious by nature, developer by craft. I solve full-stack problems, tinker with AI, and learn something new with every line of code I write.</p></div>
+          <div class="hero-actions reveal-fade"><a class="button button-primary" href="#projects" data-magnetic>Explore my work <span aria-hidden="true">↗</span></a><a class="button button-text" href="#lab">Meet me in the terminal <span aria-hidden="true">⌘</span></a></div>
+          <p class="hero-signoff mono">STAY CURIOUS. DEBUG EVERYTHING <span>BUILD SOLUTION THAT WORKS.</span></p>
+        </div>
+        <div class="portrait-area reveal-glow">
+          <div class="portrait-heading mono"><span>PROFILE.JANNA</span><span class="cyan">[ 001 ]</span></div>
+          <figure class="hero-portrait-frame" data-tilt>
+            <img src="assets/images/profile.png" alt="Developer Portrait" width="720" height="900" fetchpriority="high">
+            <i class="corner corner-tl" aria-hidden="true"></i><i class="corner corner-tr" aria-hidden="true"></i><i class="corner corner-bl" aria-hidden="true"></i><i class="corner corner-br" aria-hidden="true"></i>
+            <span class="frame-cross" aria-hidden="true">+</span>
+            <figcaption><span>Janna Andrea Justiniano</span><small>Full-Stack Developer & Software Engineer</small></figcaption>
+          </figure>
+          <div class="portrait-card glass"><span class="award-symbol" aria-hidden="true">✦</span><div><strong>Tech Stack Focus</strong><span>Modern Web Development & Artificial Intelligence</span></div></div>
+          <p class="portrait-coordinate mono" aria-hidden="true">CREATIVE MIND / ENGINEERING CORE</p>
+        </div>
+      </div>
+      <div class="hero-bottom reveal-fade">
+        <div class="metric"><strong data-counter="2">02</strong><span>Industry<br>internships</span></div>
+        <div class="metric"><strong data-counter="3">03</strong><span>Academic<br>distinctions</span></div>
+        <div class="metric"><strong data-counter="4">04</strong><span>Project & concept<br>showcases</span></div>
+        <a href="#about" class="scroll-cue mono">Explore the story <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Design, code, connect, evolve"><div class="marquee-track" aria-hidden="true"><div><span>DESIGN</span><i>✦</i><span>CODE</span><i>✦</i><span>CONNECT</span><i>✦</i><span>EVOLVE</span><i>✦</i></div><div><span>DESIGN</span><i>✦</i><span>CODE</span><i>✦</i><span>CONNECT</span><i>✦</i><span>EVOLVE</span><i>✦</i></div></div></div>
+
+    <!-- 01 / BIOGRAPHY & PROFESSIONAL PHILOSOPHY -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-top"><span class="section-index" data-typewriter>01 / THE HUMAN BEHIND THE CODE</span><span class="section-meta">CURIOUS BY NATURE</span></div>
+      <div class="about-layout">
+        <h2 class="section-title reveal-slide" id="about-title">She engineers.<br><em>With logic and heart.</em></h2>
+        <div class="about-copy reveal-fade"><p class="lead">I’m Janna. I talk to computers for a living—and honestly, they listen better than most people.</p><p>My journey into software engineering is rooted in a desire to build things that matter. Being a woman in tech means bringing a fresh perspective, empathy, and creative problem-solving to every project I take on.</p><p>I’ve always believed that the most powerful thing you can do with technology is build something that serves a real purpose. Every line of code I write is a mix of logic, continuous learning, and creative intuition</p><blockquote>“She codes. She builds. She dominates.”</blockquote></div>
+      </div>
+      <div class="principles-grid">
+        <article class="principle glass reveal-fade"><span class="mono cyan">[01] / THINK</span><h3>Clarity first.</h3><p>Understand the real problem. Make complexity easier to navigate through structure, thoughtful language, and intentional design.</p></article>
+        <article class="principle glass reveal-fade"><span class="mono pink">[02] / BUILD</span><h3>Empathy in code.</h3><p>Consider accessibility, context, and constraints from the first component. An interface should support people, not slow them down.</p></article>
+        <article class="principle glass reveal-fade"><span class="mono violet">[03] / REFINE</span><h3>Details compound.</h3><p>Test assumptions, document decisions, and improve what matters. Stay curious enough to find a better way.</p></article>
+      </div>
+    </section>
+
+    <!-- 02 / EDUCATION. Certification entries remain explicitly unfilled. -->
+    <section class="section education-section" id="education" aria-labelledby="education-title"><div class="container">
+      <div class="section-top"><span class="section-index" data-typewriter>02 / FOUNDATIONS & DISTINCTIONS</span><span class="section-meta">LEARNING IS A CONTINUOUS LOOP</span></div>
+      <div class="section-intro"><h2 class="section-title reveal-slide" id="education-title">Grounded in knowledge.<br><em>Driven to go further.</em></h2><p class="intro-copy reveal-fade">A rigorous computer science foundation, a full-ride scholarship, and the motivation to keep learning beyond the classroom.</p></div>
+      <div class="education-grid">
+        <article class="degree-card glass reveal-glow"><div class="degree-top"><span class="mono cyan">ACADEMIC RECORD / GRADUATE</span><span class="mono">PH</span></div><p class="degree-school">FEU Institute<br>of Technology</p><h3>Bachelor of Science in Computer Science</h3><p>Specialization in Software Engineering</p><div class="tag-label mono">Key coursework areas</div><ul class="tags"><li>Software Engineering</li><li>Data Structures & Algorithms</li><li>Database Systems</li><li>Human–Computer Interaction</li><li>Web Development</li><li>Computer Networks</li></ul></article>
+        <div class="education-side">
+          <div class="honor reveal-fade"><span class="honor-icon cyan" aria-hidden="true">✦</span><div><span class="eyebrow">SCHOLARSHIP</span><h3>Full-Ride Scholar</h3><p>Maintained a full scholarship throughout my degree.</p></div></div>
+          <div class="honor reveal-fade"><span class="honor-icon violet" aria-hidden="true">✦</span><div><span class="eyebrow">ACADEMIC DISTINCTION</span><h3>Top Performing Student Award</h3><p>Recognition of academic commitment and performance.</p></div></div>
+          <div class="honor reveal-fade"><span class="honor-icon pink" aria-hidden="true">✦</span><div><span class="eyebrow">RESEARCH & DEVELOPMENT</span><h3>Best Thesis Award</h3><p>XeeAI — making AI decisions easier to understand.</p></div></div>
+        </div>
+      </div>
+<details class="certifications reveal-fade" open>
+    <summary>
+        <span class="certifications-heading">
+            <span class="mono section-label">[ VERIFIED CREDENTIALS ]</span>
+            <strong>Certifications &amp; Continued Learning</strong>
+        </span>
+
+        <span class="certifications-toggle mono">
+            <span>View credentials</span>
+            <span class="toggle-icon" aria-hidden="true">+</span>
+        </span>
+    </summary>
+
+    <div class="certifications-body">
+        <p class="certifications-intro">
+            Industry-recognized certifications demonstrating my knowledge in
+            software development, Python, networking, APIs, and project management.
+        </p>
+
+        <div class="credentials-grid">
+            <!-- Microsoft -->
+            <article class="credential-card">
+                <div class="credential-card-header">
+                    <span class="credential-number mono">CERT_01</span>
+                    <span class="credential-status mono">Verified</span>
+                </div>
+
+                <div class="credential-content">
+                    <p class="credential-issuer">Microsoft</p>
+                    <h3>Career Essentials in Software Development</h3>
+                    <time datetime="2025-05" class="credential-date mono">
+                        May 2025
+                    </time>
+
+                    <div class="credential-skills">
+                        <span>Software Development</span>
+                        <span>Programming Fundamentals</span>
+                        <span>Software Design</span>
+                        <span>Career Development</span>
+                    </div>
+                </div>
+
+                <a
+                    class="credential-link"
+                    href="https://www.linkedin.com/learning/certificates/09bd665793de5e53dec3fab5d1a1642cebf18e6f533b23c9bfc4fe6d35ae5af5?accountId=254231458&amp;u=254231458&amp;success=true&amp;authUUID=bOApftG8Q3iacb7L4i1ZYw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Career Essentials in Software Development credential"
+                >
+                    View credential
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <!-- OpenEDG -->
+            <article class="credential-card">
+                <div class="credential-card-header">
+                    <span class="credential-number mono">CERT_02</span>
+                    <span class="credential-status mono">Verified</span>
+                </div>
+
+                <div class="credential-content">
+                    <p class="credential-issuer">OpenEDG Python Institute</p>
+                    <h3>Programming with Python Professional Certificate</h3>
+                    <time datetime="2025-05" class="credential-date mono">
+                        May 2025
+                    </time>
+
+                    <div class="credential-skills">
+                        <span>Python</span>
+                        <span>Object-Oriented Programming</span>
+                        <span>Data Structures</span>
+                        <span>Problem-Solving</span>
+                    </div>
+                </div>
+
+                <a
+                    class="credential-link"
+                    href="https://www.linkedin.com/learning/certificates/9d935ca9e6ebe70e3e735dd736de8e277913720f2f9af1a63ec24243e5dd7b95?u=254231458"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Programming with Python Professional Certificate credential"
+                >
+                    View credential
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <!-- Cisco -->
+            <article class="credential-card">
+                <div class="credential-card-header">
+                    <span class="credential-number mono">CERT_03</span>
+                    <span class="credential-status mono">Verified</span>
+                </div>
+
+                <div class="credential-content">
+                    <p class="credential-issuer">Cisco</p>
+                    <h3>DevNet Associate</h3>
+                    <time datetime="2025-01" class="credential-date mono">
+                        January 2025
+                    </time>
+
+                    <div class="credential-skills">
+                        <span>REST APIs</span>
+                        <span>Network Automation</span>
+                        <span>Git</span>
+                        <span>Software Development</span>
+                    </div>
+                </div>
+
+                <a
+                    class="credential-link"
+                    href="https://www.credly.com/badges/e9b957f6-693b-4ca3-a3f4-1bc2e7a4dd29/linked_in_profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Cisco DevNet Associate credential"
+                >
+                    View credential
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <!-- PMI -->
+            <article class="credential-card">
+                <div class="credential-card-header">
+                    <span class="credential-number mono">CERT_04</span>
+                    <span class="credential-status mono">Verified</span>
+                </div>
+
+                <div class="credential-content">
+                    <p class="credential-issuer">
+                        Project Management Institute
+                    </p>
+                    <h3>PMI Project Management Ready</h3>
+                    <time datetime="2025-03" class="credential-date mono">
+                        March 2025
+                    </time>
+
+                    <div class="credential-skills">
+                        <span>Project Management</span>
+                        <span>Agile Methodologies</span>
+                        <span>Business Analysis</span>
+                        <span>Project Planning</span>
+                    </div>
+                </div>
+
+                <a
+                    class="credential-link"
+                    href="https://www.credly.com/badges/9ce27698-e8c7-43b3-9dd1-c0f44e2ae2e2/public_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View PMI Project Management Ready credential"
+                >
+                    View credential
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+
+            <!-- Certiport -->
+            <article class="credential-card">
+                <div class="credential-card-header">
+                    <span class="credential-number mono">CERT_05</span>
+                    <span class="credential-status mono">Verified</span>
+                </div>
+
+                <div class="credential-content">
+                    <p class="credential-issuer">Certiport</p>
+                    <h3>Information Technology Specialist: Python</h3>
+                    <time datetime="2024-07" class="credential-date mono">
+                        July 2024
+                    </time>
+
+                    <div class="credential-skills">
+                        <span>Python</span>
+                        <span>Algorithms</span>
+                        <span>Data Types</span>
+                        <span>Debugging</span>
+                    </div>
+                </div>
+
+                <a
+                    class="credential-link"
+                    href="https://www.credly.com/badges/d12e3dcd-f5d3-4c7a-8838-b8f04376742c/public_url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Information Technology Specialist Python credential"
+                >
+                    View credential
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </article>
+        </div>
+    </div>
+</details>
+    </div></section>
+
+    <!-- 03 / TECH STACK. Native buttons expand individual skill explanations. -->
+<section
+    class="section container"
+    id="skills"
+    aria-labelledby="skills-title"
+>
+    <div class="section-top">
+        <span class="section-index" data-typewriter>
+            TECHNICAL TOOLKIT
+        </span>
+
+        <span class="section-meta">
+            DESIGN → DEVELOP → DELIVER
+        </span>
+    </div>
+
+    <div class="section-intro">
+        <h2 class="section-title reveal-slide" id="skills-title">
+            Full-stack thinking.<br>
+            <em>Connected systems.</em>
+        </h2>
+
+        <p class="intro-copy reveal-fade">
+            A practical toolkit for building responsive interfaces, developing
+            applications, integrating APIs, working with AI, and supporting
+            reliable digital systems.
+        </p>
+    </div>
+
+    <div class="skills-grid">
+        <!-- Frontend -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon cyan" aria-hidden="true">&lt;/&gt;</span>
+
+                <div>
+                    <p class="skill-label mono">Interface Layer</p>
+                    <h3>Frontend Development</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Frontend development skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>Vite</li>
+                <li>Responsive Design</li>
+                <li>Web Accessibility</li>
+            </ul>
+        </article>
+
+        <!-- Backend -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon pink" aria-hidden="true">{ }</span>
+
+                <div>
+                    <p class="skill-label mono">Application Layer</p>
+                    <h3>Backend &amp; APIs</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Backend and API skills">
+                <li>Node.js</li>
+                <li>FastAPI</li>
+                <li>REST APIs</li>
+                <li>API Integration</li>
+                <li>JSON</li>
+                <li>Request Validation</li>
+                <li>Error Handling</li>
+                <li>.NET Fundamentals</li>
+                <li>Server-Side Development</li>
+            </ul>
+        </article>
+
+        <!-- Languages -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon violet" aria-hidden="true">λ</span>
+
+                <div>
+                    <p class="skill-label mono">Core Development</p>
+                    <h3>Programming Languages</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Programming languages">
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+        </article>
+
+        <!-- Data and AI Development -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon cyan" aria-hidden="true">[ ]</span>
+
+                <div>
+                    <p class="skill-label mono">Intelligence Layer</p>
+                    <h3>Data &amp; AI Development</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Data and AI development skills">
+                <li>SQL</li>
+                <li>Microsoft SQL Server</li>
+                <li>scikit-learn</li>
+                <li>Gemini API</li>
+                <li>AI Integration</li>
+                <li>Prompt Engineering</li>
+                <li>Explainable AI</li>
+                <li>C-LIME Interpretability</li>
+                <li>Data Visualization</li>
+                <li>Machine Learning Fundamentals</li>
+            </ul>
+        </article>
+
+        <!-- AI Tools -->
+        <article class="skill-group skill-group-featured glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon pink" aria-hidden="true">✦</span>
+
+                <div>
+                    <p class="skill-label mono">AI-Assisted Workflow</p>
+                    <h3>AI Tools</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Artificial intelligence tools">
+                <li>ChatGPT</li>
+                <li>Google Gemini</li>
+                <li>Claude</li>
+                <li>GitHub Copilot</li>
+                <li>Microsoft Copilot</li>
+                <li>Perplexity</li>
+                <li>NotebookLM</li>
+                <li>Canva AI</li>
+            </ul>
+        </article>
+
+        <!-- Development Tools -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon violet" aria-hidden="true">~/</span>
+
+                <div>
+                    <p class="skill-label mono">Development Workflow</p>
+                    <h3>Developer Tools</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Developer tools">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Docker</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Chrome DevTools</li>
+                <li>Linux</li>
+                <li>Command Line</li>
+                <li>npm</li>
+                <li>Figma</li>
+            </ul>
+        </article>
+
+        <!-- Testing -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon cyan" aria-hidden="true">✓</span>
+
+                <div>
+                    <p class="skill-label mono">Quality Layer</p>
+                    <h3>Testing &amp; Quality Assurance</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="Testing and quality assurance skills">
+                <li>Functional Testing</li>
+                <li>Regression Testing</li>
+                <li>System Testing</li>
+                <li>Black-Box Testing</li>
+                <li>White-Box Testing</li>
+                <li>Test Case Design</li>
+                <li>Bug Reporting</li>
+                <li>Debugging</li>
+            </ul>
+        </article>
+
+        <!-- IT Operations -->
+        <article class="skill-group glass reveal-fade">
+            <div class="skill-heading">
+                <span class="skill-icon pink" aria-hidden="true">⌁</span>
+
+                <div>
+                    <p class="skill-label mono">Systems Layer</p>
+                    <h3>IT Operations &amp; Networking</h3>
+                </div>
+            </div>
+
+            <ul class="skill-list" aria-label="IT operations and networking skills">
+                <li>Technical Support</li>
+                <li>System Monitoring</li>
+                <li>Network Troubleshooting</li>
+                <li>Hardware Troubleshooting</li>
+                <li>Software Troubleshooting</li>
+                <li>System Documentation</li>
+                <li>Basic Network Configuration</li>
+                <li>Incident Documentation</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="stack-footnote mono">
+        <span class="cyan" aria-hidden="true">+</span>
+        <span>Always learning. Always building. Always connecting the dots.</span>
+    </div>
+</section>
+
+    <!-- 04 / PROJECTS. The three requested new project concepts use placeholders.
+         Set verified live/repository URLs in js/config.js > PORTFOLIO.projects. -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title"><div class="container">
+      <div class="section-top"><span class="section-index" data-typewriter>04 / SELECTED WORK & EXPLORATIONS</span><span class="section-meta">IDEAS → INTERFACES → SYSTEMS</span></div>
+      <div class="section-intro"><h2 class="section-title reveal-slide" id="projects-title">Purpose in every pixel.<br><em>Logic in every layer.</em></h2><p class="intro-copy reveal-fade">Project concepts and thesis work exploring full-stack architecture, dynamic documents, commerce, and explainable AI.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured glass reveal-glow" id="project-dashboard" data-tilt>
+          <div class="project-visual dashboard-visual" aria-label="Concept preview of an admin dashboard">
+            <div class="preview-meta mono"><span>01 / CONTROL ROOM</span><span>CONCEPT PREVIEW</span></div>
+            <div class="dashboard-preview"><aside aria-hidden="true"><b>j.</b><span>◈</span><span>▤</span><span>⌁</span><span>⚙</span></aside><div class="dashboard-main"><div class="dashboard-label"><span>Workspace overview</span><span class="cyan">●</span></div><div class="dashboard-stats"><div>VISITORS<strong>1,248</strong></div><div>PROJECTS<strong>08</strong></div><div>ENGAGEMENT<strong>72%</strong></div></div><div class="chart-preview"><span class="mono">TRAFFIC / ILLUSTRATIVE DATA</span><div class="chart-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="chat-preview"><span>✧</span> AI assistant <small>Ask about my work...</small></div></div></div>
+          </div>
+          <div class="project-content"><div class="project-category"><span class="eyebrow cyan">FULL-STACK / PROJECT CONCEPT</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>Portfolio &<br><em>Dynamic Admin Dashboard</em></h3><p>A personal publishing platform that brings a portfolio, content management, usage insights, and an AI assistant into one coherent experience.</p><ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Node.js</li><li>SQL</li><li>AI API</li></ul>
+          <details class="case-study" open><summary>Inside the architecture <span aria-hidden="true">+</span></summary><div><dl><dt>The problem</dt><dd>Static portfolios require code changes for every update and offer little visibility into visitor engagement.</dd><dt>The proposed solution</dt><dd>A public portfolio with a protected admin workspace for managing projects and viewing analytics.</dd><dt>Architecture</dt><dd>Next.js interface → authenticated API routes → relational database. A separate server-side AI integration keeps provider credentials out of the browser.</dd><dt>Key features</dt><dd>Secure authentication, analytics charts, dynamic project management, and an integrated AI chatbot with contextual portfolio answers.</dd><dt>Engineering focus</dt><dd>Server-side authorization, input validation, safe content rendering, and clear loading, empty, and error states.</dd></dl></div></details><div class="project-links"><a data-project-link="dashboard" data-link-kind="live" aria-disabled="true">Live demo <span>URL</span></a><a data-project-link="dashboard" data-link-kind="repo" aria-disabled="true">GitHub <span>URL</span></a></div></div>
+        </article>
+        <article class="project-card glass reveal-glow" id="project-resume" data-tilt>
+          <div class="project-visual resume-visual" aria-label="Concept preview of a resume builder"><div class="preview-meta mono"><span>02 / DOCUMENT STUDIO</span><span>CONCEPT PREVIEW</span></div><div class="resume-preview"><div class="resume-inputs" aria-hidden="true"><b>Build your next chapter.</b><span>Name</span><i></i><span>Professional summary</span><i class="tall"></i><span class="preview-button">Compile document ↗</span></div><div class="resume-paper" aria-hidden="true"><strong>YOUR NAME</strong><span>SOFTWARE ENGINEER</span><hr><b>PROFILE</b><i></i><i></i><b>EXPERIENCE</b><i></i><i></i><i></i><b>EDUCATION</b><i></i></div></div></div>
+          <div class="project-content"><div class="project-category"><span class="eyebrow violet">PRODUCTIVITY / PROJECT CONCEPT</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>AI Resume /<br><em>CV Builder</em></h3><p>A dynamic document compiler with live form inputs, structured sections, instant preview, and optional AI-assisted writing suggestions.</p><ul class="tags"><li>React</li><li>TypeScript</li><li>Python</li><li>FastAPI</li></ul><details class="case-study"><summary>Inside the architecture <span aria-hidden="true">+</span></summary><div><dl><dt>The problem</dt><dd>Formatting resumes by hand makes small changes slow and introduces inconsistencies.</dd><dt>The proposed solution</dt><dd>Turn structured personal information into a consistent document while showing every change in a live preview.</dd><dt>Architecture</dt><dd>React form state → validated resume schema → document renderer and PDF export. Optional AI suggestions are requested through a server-side API.</dd><dt>Key features</dt><dd>Dynamic sections, live inputs, repeatable experience entries, formatting presets, and reviewable AI suggestions.</dd><dt>Engineering focus</dt><dd>Reliable state updates, print pagination, accessible form labels, and keeping all final wording under the user's control.</dd></dl></div></details><div class="project-links"><a data-project-link="resume" data-link-kind="live" aria-disabled="true">Live demo <span>URL</span></a><a data-project-link="resume" data-link-kind="repo" aria-disabled="true">GitHub <span>URL</span></a></div></div>
+        </article>
+        <article class="project-card glass reveal-glow" id="project-commerce" data-tilt>
+          <div class="project-visual commerce-visual" aria-label="Concept preview of an e-commerce interface"><div class="preview-meta mono"><span>03 / COMMERCE SYSTEM</span><span>CONCEPT PREVIEW</span></div><div class="commerce-preview"><div class="commerce-nav mono"><strong>FORM / OBJECTS</strong><span>CART (02)</span></div><div class="commerce-headline">Considered objects.<br><em>Seamless discovery.</em></div><div class="commerce-products" aria-hidden="true"><div><span>EDITION 01</span><strong>Essential</strong><small>View collection ↗</small></div><div><span>EDITION 02</span><strong>Everyday</strong><small>View collection ↗</small></div><div><span>EDITION 03</span><strong>Elevated</strong><small>View collection ↗</small></div></div></div></div>
+          <div class="project-content"><div class="project-category"><span class="eyebrow pink">COMMERCE / PROJECT CONCEPT</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>E-Commerce<br><em>Engine</em></h3><p>An editorial product showcase with dynamic UI state, intuitive discovery, and a cart experience designed to feel immediate and predictable.</p><ul class="tags"><li>Next.js</li><li>React</li><li>REST APIs</li><li>Tailwind CSS</li></ul><details class="case-study"><summary>Inside the architecture <span aria-hidden="true">+</span></summary><div><dl><dt>The problem</dt><dd>Product discovery becomes frustrating when visual richness competes with clear navigation and reliable state.</dd><dt>The proposed solution</dt><dd>A responsive storefront with consistent product cards, useful filters, and a cart that stays in sync.</dd><dt>Architecture</dt><dd>Product API → normalized catalog data → reusable UI components. Shared client state coordinates filters, selections, and cart feedback.</dd><dt>Key features</dt><dd>Collection browsing, category filters, product variants, quantity controls, loading feedback, and responsive layouts.</dd><dt>Engineering focus</dt><dd>State consistency, empty-cart and no-results states, accessible controls, and clear integration boundaries for future checkout.</dd></dl></div></details><div class="project-links"><a data-project-link="commerce" data-link-kind="live" aria-disabled="true">Live demo <span>URL</span></a><a data-project-link="commerce" data-link-kind="repo" aria-disabled="true">GitHub <span>URL</span></a></div></div>
+        </article>
+        <article class="project-card thesis-card glass reveal-glow" id="project-xeeai" data-tilt><div class="thesis-visual"><span class="eyebrow violet">RESEARCH / BEST THESIS AWARD</span><span class="thesis-wordmark">Xee<em>AI</em><span aria-hidden="true">✳</span></span><div class="explanation-flow mono"><span>INPUT</span><i>→</i><span>MODEL</span><i>→</i><span class="cyan">EXPLANATION</span></div></div><div class="project-content"><h3>Making AI<br><em>understandable.</em></h3><p>An explainable AI platform that explores why a model produces a prediction, using C-LIME interpretability and interactive data visualizations.</p><ul class="tags"><li>Next.js</li><li>FastAPI</li><li>Python</li><li>Gemini AI</li><li>scikit-learn</li></ul><details class="case-study"><summary>Inside the research <span aria-hidden="true">+</span></summary><div><dl><dt>The problem</dt><dd>Model predictions are difficult to trust when people cannot understand the factors behind them.</dd><dt>The approach</dt><dd>Combine local explanations with an interface that makes input impact visible and easier to explore.</dd><dt>Architecture</dt><dd>React / Next.js interface → Python / FastAPI analysis service → model explanation and visualization outputs.</dd><dt>Contribution</dt><dd>Full-stack development and explainability integration.</dd><dt>Recognition</dt><dd>Best Thesis Award.</dd></dl></div></details><div class="project-links"><a data-project-link="xeeai" data-link-kind="live" aria-disabled="true">Live demo <span>URL</span></a><a data-project-link="xeeai" data-link-kind="repo" aria-disabled="true">GitHub <span>URL</span></a></div></div></article>
+      </div>
+    </div></section>
+
+    <!-- 05 / CONFIRMED INTERNSHIPS. Add exact dates when ready. -->
+    <section class="section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-top"><span class="section-index" data-typewriter>05 / THE JOURNEY SO FAR</span><span class="section-meta">REAL SYSTEMS. REAL RESPONSIBILITY.</span></div>
+      <div class="section-intro"><h2 class="section-title reveal-slide" id="experience-title">From system signals<br><em>to software solutions.</em></h2><p class="intro-copy reveal-fade"></p></div>
+      <div class="experience-list">
+        <article class="experience-card reveal-fade"><div class="experience-marker mono">01<span></span></div><div class="experience-main"><div class="experience-meta"><span class="eyebrow cyan">COMMVERGE SOLUTIONS</span><span class="mono muted">INTERNSHIP</span></div><h3>Network Solutions Engineer</h3><p class="experience-summary">A foundation in operational visibility, system health, and methodical troubleshooting.</p><ul class="impact-list"><li>Supported network troubleshooting by investigating connectivity issues and helping document findings.</li><li>Monitored system health and reviewed performance metrics to identify unusual behavior and support service reliability.</li><li>Prepared end-user technical documentation with clear procedures and troubleshooting guidance.</li><li>Developed a structured approach to observing symptoms, gathering evidence, and communicating technical issues.</li></ul><ul class="tags"><li>System Monitoring</li><li>Network Troubleshooting</li><li>Performance Metrics</li><li>Technical Documentation</li></ul></div></article>
+        <article class="experience-card reveal-fade"><div class="experience-marker mono">02<span></span></div><div class="experience-main"><div class="experience-meta"><span class="eyebrow violet">KMC SOLUTIONS</span><span class="mono muted">INTERNSHIP</span></div><h3>System Support Specialist </h3><p class="experience-summary">Hands-on support for the people, devices, and infrastructure behind daily operations.</p><ul class="impact-list"><li>Assisted with hardware and software troubleshooting to help users resolve workplace technology issues.</li><li>Supported network infrastructure and investigated connectivity concerns.</li><li>Helped with user onboarding, device setup, and everyday IT support requests.</li><li>Built confidence explaining technical steps clearly and working through issues with patience and attention to detail.</li></ul><ul class="tags"><li>IT Support</li><li>Hardware / Software</li><li>Network Infrastructure</li><li>User Onboarding</li></ul></div></article>
+      </div>
+      <div class="trajectory glass reveal-glow"><span class="mono cyan">NEXT CHAPTER →</span><p>Applying an operational mindset to <em>full-stack software engineering.</em></p><a href="#contact" class="text-link">Let's talk about your team ↗</a></div>
+    </section>
+
+    <!-- 06 / TERMINAL. All output uses DOM text nodes, never user-generated HTML. -->
+    <section class="section lab-section" id="lab" aria-labelledby="lab-title"><div class="container">
+      <div class="section-top"><span class="section-index" data-typewriter>06 / PORTFOLIO.EXE</span><span class="section-meta">A CONVERSATION WITH THE CODE</span></div>
+      <div class="lab-layout"><div class="lab-copy"><h2 class="section-title reveal-slide" id="lab-title">A little less scroll.<br><em>A little more shell.</em></h2><p>Explore my background, internships, and work through a small interactive terminal. No setup required. Just curiosity.</p><p class="mono lab-hint">TRY A COMMAND ↓</p><div class="command-buttons"><button type="button" data-command="help">help</button><button type="button" data-command="about">about</button><button type="button" data-command="skills">skills</button><button type="button" data-command="experience">experience</button><button type="button" data-command="projects">projects</button><button type="button" data-command="contact">contact</button><button type="button" data-command="clear">clear</button></div><p class="small muted">↑ ↓ Command history &nbsp; / &nbsp; Tab Autocomplete</p></div>
+      <div class="terminal glass reveal-glow" role="region" aria-label="Interactive portfolio terminal"><div class="terminal-bar"><div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div><span class="mono">janna@portfolio:~</span><span class="terminal-mode mono">LOCAL SHELL</span></div><div class="terminal-output" id="terminal-output" tabindex="0" aria-label="Terminal history"><div class="terminal-entry"><p class="terminal-welcome">JANNA / SYSTEM READY</p><p class="terminal-muted">An engineer's mind. A creative instinct.</p><p>Welcome, visitor. Type <strong>help</strong> to begin.</p><p class="terminal-muted">This is a local portfolio demo; commands do not access your device.</p></div></div><p id="terminal-announcement" class="sr-only" role="status"></p><form id="terminal-form" class="terminal-form"><label for="terminal-input"><span aria-hidden="true">visitor:~$</span><span class="sr-only">Terminal command</span></label><input id="terminal-input" name="command" type="text" maxlength="120" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help" aria-describedby="terminal-shortcuts"><button type="submit" aria-label="Run terminal command">↵</button></form><div class="terminal-footer mono" id="terminal-shortcuts"><span><span class="cyan">●</span> READY</span><span>7 COMMANDS / ENTER TO RUN</span></div><noscript><p class="terminal-noscript">Enable JavaScript to run terminal commands. All profile information is available in the sections above.</p></noscript></div></div>
+    </div></section>
+
+    <!-- 07 / CONTACT. Mailto composes a message; it does not send automatically. -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <div class="section-top"><span class="section-index" data-typewriter>07 / ESTABLISH A CONNECTION</span><span class="section-meta">GOOD WORK STARTS WITH A CONVERSATION</span></div>
+      <div class="contact-layout"><div class="contact-copy"><p class="availability mono"><span class="status-dot"></span> Open for Software Engineering Roles</p><h2 class="section-title reveal-slide" id="contact-title">Your next idea.<br><em>Our next chapter.</em></h2><p class="lead">Have a role, product idea, or collaboration in mind? I'd love to hear what you're building.</p><a class="email-link" href="mailto:jannajustiniano1@gmail.com">jannajustiniano1@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-meta mono"><span>TAGUIG CITY, PHILIPPINES</span><span>UTC+08 / PHILIPPINE TIME</span></div><div class="social-links"><a data-social="github" aria-disabled="true">GitHub <span></span></a><a data-social="linkedin" aria-disabled="true">LinkedIn <span></span></a><a data-social="resume" aria-disabled="true">Résumé <span></span></a></div></div>
+      <form class="contact-form glass reveal-glow" id="contact-form" action="mailto:jannajustiniano1@gmail.com" method="post" enctype="text/plain"><div class="form-header mono"><span>NEW_MESSAGE</span><span class="cyan">↗</span></div><div class="form-row"><label for="contact-name">Your name<input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" maxlength="100" required></label><label for="contact-email">Email address<input id="contact-email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" maxlength="200" required></label></div><label for="contact-subject">What's the opportunity?<input id="contact-subject" name="subject" type="text" placeholder="A role, project, or collaboration…" maxlength="160" required></label><label for="contact-message">Your message<textarea id="contact-message" name="message" rows="5" placeholder="Tell me a little about what you have in mind." maxlength="4000" required></textarea></label><button class="button button-primary" type="submit" data-magnetic>Compose email <span aria-hidden="true">↗</span></button><p class="form-note">Opens your email app with a draft addressed to Janna. Review it and press Send there.</p><p class="form-status" id="form-status" role="status"></p></form></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#home"><span class="brand-symbol" aria-hidden="true">j.</span><span>JANNA / DEV</span></a><a class="back-to-top mono" href="#home">BACK TO TOP ↑</a></div><p class="footer-statement">She codes<br><em>The future.</em></p><div class="footer-bottom"><p>© <span id="current-year">2026</span> Janna Andrea Justiniano</p><p class="mono">BUILT WITH INTENTION / ALWAYS EVOLVING</p><button type="button" class="motion-toggle" id="motion-toggle" aria-pressed="true" hidden>Motion: on</button></div></div></footer>
+</body>
+</html>
