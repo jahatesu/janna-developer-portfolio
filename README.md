@@ -73,5 +73,5 @@ Double-click index.html to open it in any modern web browser.
 Option B: Local Development Server (Recommended)
 Using VS Code Live Server extension or Python’s HTTP server:
 
-#📄 License
+# 📄 License
 This project is open-source and available under the MIT License. Feel free to customize it for your own developer portfolio!
