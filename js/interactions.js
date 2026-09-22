@@ -169,24 +169,60 @@ $$('[data-social]').forEach(link => enableLink(link, PORTFOLIO.socials[link.data
 }
 
 export function initContactForm() {
-/* 08 / CONTACT: validated email draft, not a simulated send-success. */
-$('#contact-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  if (!form.reportValidity()) return;
-  const values = new FormData(form);
-  const name = String(values.get('name') || '').trim();
-  const email = String(values.get('email') || '').trim();
-  const subject = String(values.get('subject') || '').trim();
-  const message = String(values.get('message') || '').trim();
-  if (!name || !subject || !message) {
-    $('#form-status').textContent = 'Please add your name, a subject, and a message before composing your email.';
-    return;
-  }
-  const body = `Hi Janna,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`;
-  const url = `mailto:${PORTFOLIO.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  $('#form-status').textContent = 'Your email draft is ready. If no email app opens, use the email address beside this form. Your message stays here until you send it.';
-  window.location.href = url;
-});
+  const form = $('#contact-form');
 
+  if (!form) return;
+
+  const status = $('#form-status');
+  const submitButton = form.querySelector('button[type="submit"]');
+
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) return;
+
+    const originalButtonHTML = submitButton.innerHTML;
+
+    submitButton.disabled = true;
+    submitButton.innerHTML =
+      'Sending... <span aria-hidden="true">↗</span>';
+
+    status.textContent = 'Sending your message...';
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch(
+        'https://api.web3forms.com/submit',
+        {
+          method: 'POST',
+          body: formData
+        }
+      );
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(
+          result.message || 'Unable to send message.'
+        );
+      }
+
+      form.reset();
+
+      status.textContent =
+        'Message sent successfully. Thank you — I’ll get back to you soon.';
+
+    } catch (error) {
+      console.error('Contact form error:', error);
+
+      status.textContent =
+        'Message could not be sent. Please try again or email me directly at jannajustiniano1@gmail.com';
+
+    } finally {
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalButtonHTML;
+    }
+  });
 }
